@@ -1,0 +1,99 @@
+*, *::before, *::after 
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+html { font-size: 62.5%; }
+/****************************************/
+.crd 
+{
+    margin: 10px;
+    background-color: rgba(2, 134, 139, 0.180);
+    border-radius: 15%;
+    position: relative;
+    top: 100px;
+    width: 350px;
+    height: 470px;
+    overflow: hidden;
+    text-align: right;
+    margin-bottom: 130px;
+}
+.crd-img
+{
+    position: absolute;
+    border-radius: 15%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.crd-info
+{
+    color: hsl(0, 0%, 90%);
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+}
+.crd-heading 
+{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 900;
+    opacity: .8;
+}
+.crd-text 
+{
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    opacity: .6;
+}
+/****************************************/
+.crd--effect .crd-heading span
+{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: .5s;
+}
+.crd--effect .crd-text span
+{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    right: 10px;
+    top: 53.5px;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: .5s;
+}
+.crd--effect:hover .crd-heading span, .crd--effect:hover .crd-text span
+{
+    opacity: 1;
+    transform: scale(1);
+}
+.crd--effect .crd-info 
+{
+    text-align: right;
+    right: 30px;
+    left: unset;
+}
+.crd--effect .crd-text 
+{
+    padding-left: 0;
+    padding-right: 1rem;
+}
+.crd--effect .crd-img { transition: .5s; }
+.crd--effect:hover .crd-img { transform: scale(.9); }
+.crd--effect .crd-heading { position: relative; }
+
+
