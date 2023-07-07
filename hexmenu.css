@@ -26,7 +26,7 @@
   display: table;
   width: 100%;
   height: -webkit-calc(100vh - 4px);
-  height: -moz-calc(100vh - 4px);
+  height: -moz-calc(150vh - 4px);
   height: calc(100vh - 4px); 
 }
   
@@ -283,6 +283,21 @@
 /*end of classes*/
 
 /************************************************************/
+@media (min-width: 768px) {
+  .hexagon-menu {
+    width: 720px;
+  }
+}
+
+@media (min-width: 1100px)
+{
+  .col-lg-offset-2 { margin-left: 10%; }
+
+  .hexagon-menu {
+    width: 800px;
+  }
+}
+
 @media (min-width: 1200px)
 {
   .col-lg-offset-2 { margin-left: 16.66666667%; }
@@ -327,8 +342,18 @@
   }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 852px) {
+  .hexagon-menu {
+    margin-left: -10px;
+  }
+}
+
+@media only screen and (max-width: 774px)
 {
+  .hexagon-menu {
+    margin-left: 10px;
+  }
+
   .hexagon-item 
   {
     float: none;

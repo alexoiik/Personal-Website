@@ -10,10 +10,13 @@
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 100px;
+    margin-right: 85px;
+    margin-left: 85px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 35rem;
     overflow: hidden;
     position: relative;
-    top: 110px;
 }
 
 .tabs [class^="tab"] label, .tabs [class*=" tab"] label 
@@ -21,8 +24,8 @@
     color: whitesmoke;
     cursor: pointer;
     display: block;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 35px;
+    font-weight: 400;
     line-height: 1em;
     padding: 2rem 0;
     text-align: center; 
@@ -78,3 +81,75 @@
 .tabs .tab-2:last-child [type="radio"] + div { margin-left: 100%; }
 
 .tabs .tab-2:last-child [type="radio"]:checked + div { margin-left: -100%; }
+
+.tabs h2 {
+    font-weight: 400;
+}
+
+.tabs .tab-2 img {
+    vertical-align: middle; 
+    border-radius:30%; 
+    width:200px; 
+    height:140px;
+}
+
+@media (max-width: 1228px) {
+    .tabs {
+        height: 40rem;
+    }
+}
+
+@media (max-width: 947px) {
+    .tabs {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .tabs h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 852px) {
+    .tabs {
+        height: 45rem;
+    }
+}
+
+@media (max-width: 774px) {
+    .tabs {
+        height: 55rem;
+    }
+}
+
+@media (max-width: 608px) {
+    .tabs {
+        height: 65rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .tabs {
+        height: 75rem;
+    }
+}
+
+@media (max-width: 455px) {
+    .tabs {
+        height: 85rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .tabs {
+        height: 95rem;
+    }
+
+}
+
+@media (max-width: 328px) {
+    .tabs .tab-2 img {
+        width: 160px; 
+        height: 110px;
+    }
+}

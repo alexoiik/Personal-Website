@@ -110,11 +110,14 @@ a { color: whitesmoke; }
   background: rgba(2, 134, 139, 0.400);
   text-align: center;
   position: relative;
-  bottom: 190px;
+  bottom: 170px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 25%;
 }
 .LinksMessage span
 {
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 1px;
 }
 /******************************/
@@ -148,16 +151,28 @@ a { color: whitesmoke; }
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
+
+@media (max-width: 410px) {
+  .profile-title { 
+    left: 40%;
+  }
+  .ProfileScroll {
+    left: 40.3%;
+}
+}
 /******************************/
 .MoviesMessage 
 {
   background: rgba(2, 134, 139, 0.400);
   text-align: center;
   position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 25%;
 }
 .MoviesMessage span
 {
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 1px;
 }
 /******************************/
@@ -180,7 +195,7 @@ a { color: whitesmoke; }
 {
   position:absolute; 
   background:rgba(2, 134, 139, 0.400);
-  border-radius: 45%; 
+  border-radius: 25%;
   left:40px; 
   width:70%; 
   height:33px; 
@@ -197,6 +212,32 @@ a { color: whitesmoke; }
   color: white;
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+}
+
+iframe {
+  border:none; 
+  position:relative; 
+  left:110px; 
+  top:30px; 
+  margin-bottom:40px;
+}
+
+@media(max-width: 775px) {
+  iframe {
+    left: 60px; 
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery-title {
+    left: 38.7%; 
+  }
+}
+
+@media(max-width: 420px) {
+  iframe {
+    left: 25px; 
+  }
 }
 /******************************/
 .music-title
@@ -231,4 +272,13 @@ a { color: whitesmoke; }
 }
 /******************************/
 footer { padding: 22px 0; }
-footer p { font-size: 18px; color: rgba(255, 255, 255, 0.650); margin: 0; }
+footer p, footer p a { 
+  font-size: 18px; 
+  color: rgba(255, 255, 255, 0.650); 
+  margin: 0; 
+}
+footer p a:hover {
+  text-decoration: none;
+  color: rgba(2, 134, 139, 0.400);
+  cursor: pointer;
+}
