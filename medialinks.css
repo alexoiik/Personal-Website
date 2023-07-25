@@ -1,36 +1,34 @@
-.SocialMedia ul 
-{
-    margin-left: 450px;
+.SocialMedia ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
-.SocialMedia ul li { list-style: none; }
+.SocialMedia ul li { 
+    list-style: none; 
+}
   
-.SocialMedia ul li a 
-{
-    position: relative;
-    width:90px;
-    height:90px;
-    display:block;
-    text-align:center;
-    margin:0 10px;
+.SocialMedia ul li a {
+    width: 90px;
+    height: 90px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
     border-radius: 50%;
     padding: 6px;
     box-sizing: border-box;
-    text-decoration:none;
+    text-decoration: none;
     box-shadow: 0 10px 15px rgb(2, 134, 139);
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
 }
   
-.SocialMedia ul li a:hover 
-{
+.SocialMedia ul li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     text-decoration:none;
 }
   
-.SocialMedia ul li a .fab 
-{
+.SocialMedia ul li a .fab {
     width: 100%;
     height: 100%;
     display:block;
@@ -51,32 +49,37 @@
 .SocialMedia ul li:nth-child(4) a:hover .fab { color: #00ac42; }
 
 .SocialMedia ul li:nth-child(5) a:hover .fab { color: #1a3d88;  }
- 
-@media (max-width: 1052px) {
-    .SocialMedia ul {
-        margin-left: 180px;
-    }
-}
 
 @media (max-width: 780px) {
     .SocialMedia ul {
-        margin-left: 10px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 666px) {
     .SocialMedia ul {
-        display: inline-block;
-        margin-left: 180px;
+        display: block;
+        margin-left: 200px;
     }
     .SocialMedia ul li a {
         margin-top: 20px;
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 595px) {
     .SocialMedia ul {
         margin-left: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    .SocialMedia ul {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 385px) {
+    .SocialMedia ul {
+        margin-left: 90px;
     }
 }

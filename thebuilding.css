@@ -120,6 +120,11 @@ a { color: whitesmoke; }
   font-size: 28px;
   letter-spacing: 1px;
 }
+@media (max-width: 667px) {
+  .LinksMessage {
+    bottom: 40px;
+  }
+}
 /******************************/
 .profile-title 
 { 
@@ -158,7 +163,7 @@ a { color: whitesmoke; }
   }
   .ProfileScroll {
     left: 40.3%;
-}
+ }
 }
 /******************************/
 .MoviesMessage 
